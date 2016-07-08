@@ -70,6 +70,7 @@ brew install redis
 brew install sphinx
 brew install mysql
 brew install shpotify
+brew install nvm
 
 # Cask
 brew tap caskroom/versions
