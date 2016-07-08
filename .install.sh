@@ -103,3 +103,12 @@ brew cask install steam
 
 # Remove outdated versions from the cellar.
 brew cleanup
+
+# Gems
+gem install bundle -v1.8.9
+gem install mailcatcher
+gem install foreman
+
+# Node
+npm install -g gulp
+npm install -g grunt
