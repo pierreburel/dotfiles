@@ -70,6 +70,7 @@ brew install libxml2
 brew install redis
 brew install sphinx
 brew install mysql
+brew install shpotify
 
 # Cask
 brew tap caskroom/versions
@@ -97,7 +98,6 @@ brew cask install firefox
 brew cask install bowtie
 brew cask install vlc
 brew cask install spotify
-brew cask install shpotify
 brew cask install skype
 
 brew cask install steam
