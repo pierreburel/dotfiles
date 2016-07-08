@@ -65,7 +65,6 @@ brew install openssl
 brew install rbenv
 brew install ruby-build
 brew install thefuck
-brew install thefuck
 brew install libxml2
 brew install redis
 brew install sphinx
@@ -89,7 +88,6 @@ brew cask install virtualbox
 brew cask install iterm2
 brew cask install atom
 brew cask install sublime-text
-brew cask install imagealpha
 brew cask install imageoptim
 
 brew cask install google-chrome
