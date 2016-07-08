@@ -64,6 +64,12 @@ brew install curl
 brew install openssl
 brew install rbenv
 brew install ruby-build
+brew install thefuck
+brew install thefuck
+brew install libxml2
+brew install redis
+brew install sphinx
+brew install mysql
 
 # Cask
 brew tap caskroom/versions

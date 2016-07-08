@@ -17,6 +17,9 @@ alias g="git"
 alias h="history"
 alias j="jobs"
 
+# Oldie, use o instead (see .function)
+alias oo="open ."
+
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
 	colorflag="--color"
@@ -149,3 +152,44 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
+
+# Bundle
+alias rake='be rake'
+alias mailcatcher='be mailcatcher'
+alias rails='be rails'
+alias cap='be cap'
+alias rspec='be rspec'
+alias rackup='be rackup'
+alias middleman='be middleman'
+
+be() {
+  if [[ -a Gemfile ]]; then
+    bundle exec $*
+  else
+    command $*
+  fi
+}
+bi() {
+  bundle install --path="vendor/bundle" --clean
+}
+
+# Capistrano
+alias capsa='cap staging assets:precompile'
+alias capsr='cap staging deploy:release'
+alias cappa='cap staging assets:precompile'
+alias cappr='cap production deploy:release'
+alias capsrf='cap staging deploy:release FORCE_ASSETS_PRECOMPILE=1'
+alias capprf='cap production deploy:release FORCE_ASSETS_PRECOMPILE=1'
+
+function caps {
+  cap staging deploy $@
+}
+function capp {
+  cap production deploy $@
+}
+function capsu {
+  cap staging deploy:upload deploy:restart FILES="$@"
+}
+function cappu {
+  cap production deploy:upload deploy:restart FILES="$@"
+}
