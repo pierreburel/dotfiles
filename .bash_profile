@@ -51,4 +51,4 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 eval "$(thefuck --alias)"
 
 # NVM
-[[ -s "$HOME/.nvm/nvm.sh" ]] && . "$HOME/.nvm/nvm.sh"  # This loads NVM
+source "$(brew --prefix nvm)/nvm.sh"
