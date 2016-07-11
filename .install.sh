@@ -105,7 +105,7 @@ brew cask install steam
 brew cleanup
 
 # Gems
-gem install bundle -v1.8.9
+gem install bundler -v1.8.9
 gem install mailcatcher
 gem install foreman
 
