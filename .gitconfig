@@ -82,7 +82,7 @@
   co = checkout
 	log = l
 	aa = add -A
-	oops = amend
+	oops = commit --amend
 
 [apply]
 
